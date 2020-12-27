@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess Number</title>
+    <link href="css/globals.css" rel="stylesheet">
+</head>
+<body>
+
+    <div class="notification">
+        <p class="notification__intro notificationProperties">Number 1 can not be greater than Number 2</p>
+        <p class="notification__onlyNumber notificationProperties">Only numbers</p>
+        <p class="notification__high notificationProperties">Your Number is high</p>
+        <p class="notification__low notificationProperties">Your Number is low</p>
+        <p class="notification__lost notificationProperties">You Lost</p>
+        <p class="notification__won notificationProperties">You Won!</p>
+    </div>
+
+    <div class="intro">
+        <h1>Welcome to Guess my Number Game</h1>
+
+        <form class="intro__form">
+
+            <h2>You have to guess my number, you will have 5 trys</h2>
+
+            <h3>Put 2 numbers to start the game, the first box has to be a lower number than the second</h3>
+            <div class="intro__form-1">
+                <label>Number 1</label>
+                <input id="inputNum-1" type="text" placeholder="Number1">
+            </div>
+
+            <div class="intro__form-2">
+                <label>Number 2</label>
+                <input id="inputNum-2" type="text" placeholder="Number2">
+            </div>
+
+            <div class="intro__form-btn">
+                <button id="introBtn" type="button">Start Game</button>
+            </div>
+        </form>
+    </div>
+
+    <form class="form">
+        <h2>Try Number: <span id="spanTry">5 Restant</span></h2>
+        <div class="form__number">
+            <label>Guess my number between <span id="spanGuess">0 - 0</span></label>
+            <input id="inputGuess" type="text" placeholder="Guess my Number">
+        </div>
+
+        <div class="form__btn">
+            <button id="formBtn" type="button">Guess</button>
+        </div>
+    </form>
+    <script src="js/main.js"></script>
+</body>
+</html>
